@@ -10,6 +10,24 @@
         <link rel="shortcut icon" type="image/x-icon" href="https://i.pinimg.com/originals/a2/5f/4f/a25f4f58938bbe61357ebca42d23866f.png" sizes="32x32"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title> Instagram Clone</title>
+
+        <script type="text/javascript">
+            let vaccum_section = document.getElementById('vaccum-ad');
+            let airstrait_section = document.getElementById('airstrait-ad');
+            vaccum_section.style.display = "none";
+            airstrait_section.style.display = "none";
+
+            function AdFunction() {
+              if (airstrait_section.style.display === "none") {
+                airstrait_section.style.display = "block";
+                vaccum_section.style.display = "none";
+              } else {
+                vaccum_section.style.display = "block";
+                airstrait_section.style.display = "none";
+              }
+            }
+
+        </script>
     </head>
 
     <body>
@@ -24,6 +42,7 @@
                     <img src="images/explore.PNG" class="icon" alt="">
                     <img src="images/like.PNG" class="icon" alt="">
                     <div class="icon user-profile"></div>
+                    <button onclick="AdFunction()">Click</button>
                 </div>
             </div>
         </nav>
@@ -114,6 +133,60 @@
                             <input type="text" class="comment-box" placeholder="Add a comment">
                             <button class="comment-btn">post</button>
                         </div>
+                    </div>
+
+                    <div class="post" id="airstrait-ad">
+                       <div class="info">
+                          <div class="user">
+                             <div class="profile-pic"><img src="images/dysonhair.jpeg" alt=""></div>
+                             <p class="username">dysonhair</p>
+                          </div>
+                          <img src="images/option.PNG" class="options" alt=""> 
+                       </div>
+                       <img src="images/airstrait.jpeg" class="post-image" alt=""> 
+                       <div class="post-link"> <a class="post-link-anchor" href="https://www.dyson.com/en?coming_from_airstrait_ad=true" rel="nofollow noopener noreferrer" target="_blank">Buy Now ></a> </div>
+                       <div class="post-content">
+                          <div class="reaction-wrapper"> <img src="images/like.PNG" class="icon" alt=""> <img src="images/comment.PNG" class="icon" alt=""> <img src="images/send.PNG" class="icon" alt=""> <img src="images/save.PNG" class="save icon" alt=""> </div>
+                          <p class="likes">5,040 likes</p>
+                          <p class="description"><span>dysonhair </span> See how the new Dyson Airstrait™ straightener takes hair from wet to a volume-packed, ‘90s-inspired straight style. Click on the link to get yours #DysonAirstrait</p>
+                          <p class="post-time">View all 50 comments</p>
+                       </div>
+                       <div class="comment-wrapper"> <img src="images/dsn.png" class="icon" alt=""> <input type="text" class="comment-box" placeholder="Add a comment"> <button class="comment-btn">post</button> </div>
+                    </div>
+
+                    <div class="post" id="vaccum-ad">
+                       <div class="info">
+                          <div class="user">
+                             <div class="profile-pic"><img src="images/dyson.jpg" alt=""></div>
+                             <p class="username">dyson</p>
+                          </div>
+                          <img src="images/option.PNG" class="options" alt="">
+                       </div>
+                       <img src="images/dyson-vaccum.jpeg" class="post-image" alt="">
+                       <div class="post-link">
+                          <a class="post-link-anchor" href="https://www.dyson.com/vacuum-cleaners/cordless/gen5/detect-hepa-purple-iron" rel="nofollow noopener noreferrer" target="_blank">Buy Now  ></a>
+                       </div>
+                       <div class="post-content">
+                          <div class="reaction-wrapper">
+                             <img src="images/like.PNG" class="icon" alt="">
+                             <img src="images/comment.PNG" class="icon" alt="">
+                             <img src="images/send.PNG" class="icon" alt="">
+                             <img src="images/save.PNG" class="save icon" alt="">
+                          </div>
+                          <p class="likes">3,523 likes</p>
+                          <p class="description"><span>dyson </span> Like father, like son.
+                             First came bagless cyclone technology, then came our most-powerful, HEPA cordless vacuum – the Dyson Gen5detect™.
+                             Both engineered to deliver deep cleaning throughout your whole home. How? Through pioneering technology and constant development.
+                             Deep cleaning homes for generations.
+                             #DysonGen5Detect #FathersDay #LikeFatherLikeSon #DysonTechnology
+                          </p>
+                          <p class="post-time">View all 50 comments</p>
+                       </div>
+                       <div class="comment-wrapper">
+                          <img src="images/dsn.png" class="icon" alt="">
+                          <input type="text" class="comment-box" placeholder="Add a comment">
+                          <button class="comment-btn">post</button>
+                       </div>
                     </div>
                 </div>
             </div>
