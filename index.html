@@ -13,7 +13,7 @@
 
         <script type="text/javascript">
             document.getElementById('vaccum-ad').style.display = 'none';
-            document.getElementById('airstrait-ad')style.display = 'none';
+            document.getElementById('airstrait-ad').style.display = 'none';
 
             function AdFunction() {
                 let vaccum_section = document.getElementById('vaccum-ad');
@@ -42,7 +42,7 @@
                     <img src="images/explore.PNG" class="icon" alt="">
                     <img src="images/like.PNG" class="icon" alt="">
                     <div class="icon user-profile"></div>
-                    <button onclick="AdFunction()">Click</button>
+                    <button onclick="AdFunction(this)">Refresh</button>
                 </div>
             </div>
         </nav>
@@ -191,23 +191,5 @@
                 </div>
             </div>
         </section>
-
-        <script type="text/javascript">
-            document.getElementById('vaccum-ad').style.display = 'none';
-            document.getElementById('airstrait-ad')style.display = 'none';
-
-            function AdFunction() {
-                let vaccum_section = document.getElementById('vaccum-ad');
-                let airstrait_section = document.getElementById('airstrait-ad');
-                if (airstrait_section.style.display === "none") {
-                    airstrait_section.style.display = 'block';
-                    vaccum_section.style.display = 'none';
-                } else {
-                    vaccum_section.style.display = 'block';
-                    airstrait_section.style.display = 'none';
-                }
-            }
-
-        </script>
     </body>
 </html>
