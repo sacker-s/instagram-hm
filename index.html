@@ -12,8 +12,12 @@
         <title> Instagram Clone</title>
 
         <script type="text/javascript">
-            document.getElementById('vaccum-ad').style.display = 'none';
-            document.getElementById('airstrait-ad').style.display = 'none';
+
+            window.addEventListener('load', function() {
+                document.getElementById('vaccum-ad').style.display = 'none';
+                document.getElementById('airstrait-ad').style.display = 'none';
+            })
+
 
             function AdFunction() {
                 let vaccum_section = document.getElementById('vaccum-ad');
@@ -42,7 +46,7 @@
                     <img src="images/explore.PNG" class="icon" alt="">
                     <img src="images/like.PNG" class="icon" alt="">
                     <div class="icon user-profile"></div>
-                    <button onclick="AdFunction(this)">Refresh</button>
+                    <img src="images/smile.PNG" class="icon" alt="" onclick="AdFunction(this)">
                 </div>
             </div>
         </nav>
